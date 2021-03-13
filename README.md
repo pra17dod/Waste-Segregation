@@ -16,9 +16,9 @@ Tensorflow, Flask, React.js, Heroku
 - Neel Bavarva      
   <span>
   &nbsp;&nbsp;
-  <a href="#"> <img src="https://img.icons8.com/nolan/64/linkedin.png" width="2%"> </a> &nbsp;
-  <a href="#"> <img src="https://img.icons8.com/nolan/64/github.png" width="2%"> </a> &nbsp;
-  <a href="#"> <img src="https://img.icons8.com/nolan/64/open-resume.png" width="2%"> </a> &nbsp;
+  <a href="https://www.linkedin.com/in/neel-bavarva-61662a1a3"> <img src="https://img.icons8.com/nolan/64/linkedin.png" width="2%"> </a> &nbsp;
+  <a href="https://github.com/neelbavarva"> <img src="https://img.icons8.com/nolan/64/github.png" width="2%"> </a> &nbsp;
+  <a href="https://drive.google.com/file/d/1g6KHV_6QAEIDC4FxouLl95mWG3B5PUf-/view?usp=sharing"> <img src="https://img.icons8.com/nolan/64/open-resume.png" width="2%"> </a> &nbsp;
   </span>
 - Prashant Dodiya    
   <span>
