@@ -30,9 +30,9 @@ Tensorflow, Django, React.js, Heroku
 - Harshit Gupta   
   <span>
   &nbsp;&nbsp;
-  <a href="#"> <img src="https://img.icons8.com/nolan/64/linkedin.png" width="2%"> </a> &nbsp;
-  <a href="#"> <img src="https://img.icons8.com/nolan/64/github.png" width="2%"> </a> &nbsp;
-  <a href="#"> <img src="https://img.icons8.com/nolan/64/open-resume.png" width="2%"> </a> &nbsp;
+  <a href="https://www.linkedin.com/in/harshit-gupta-8a7b621a4/"> <img src="https://img.icons8.com/nolan/64/linkedin.png" width="2%"> </a> &nbsp;
+  <a href="https://github.com/H4R5H1T-007"> <img src="https://img.icons8.com/nolan/64/github.png" width="2%"> </a> &nbsp;
+  <a href="https://drive.google.com/file/d/1uMQr5L14QV16K7yWchbFPBnaZbj-1be_/view?usp=sharing"> <img src="https://img.icons8.com/nolan/64/open-resume.png" width="2%"> </a> &nbsp;
   </span>
 - Neel Thakker    
   <span>
