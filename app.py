@@ -1,4 +1,3 @@
-import numpy as np
 from flask import Flask, request, jsonify, render_template
 from model import get_output
 from PIL import Image
