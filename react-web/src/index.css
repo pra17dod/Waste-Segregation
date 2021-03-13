@@ -896,3 +896,13 @@ div label[for=ui-component-toggle__yearly] {
 | 8.3 1200PX
 |
 --------------------------------------------------------------*/
+
+.waste-image{
+  width: 500px;
+  border-radius: 10px;
+
+}
+
+.ui-section-hero{
+  margin-bottom: -10rem;
+}

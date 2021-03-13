@@ -15,9 +15,9 @@ export default function Navbar() {
             <label for="ui-section-header--menu-id" class="ui-section-header--menu-icon"></label>
             
             <nav role="navigation" class="ui-section-header--nav ui-layout-flex">
-                <a href="#" role="link" aria-label="#" class="ui-section-header--nav-link">Prance</a>
-                <a href="#" role="link" aria-label="#" class="ui-section-header--nav-link">Thakker</a>
-                <a href="#" role="link" aria-label="#" class="ui-section-header--nav-link">Smiley</a>
+                <a href="#" role="link" aria-label="#" class="ui-section-header--nav-link">Home</a>
+                <a href="#" role="link" aria-label="#" class="ui-section-header--nav-link">Info</a>
+                <a href="#" role="link" aria-label="#" class="ui-section-header--nav-link">Bottom</a>
             </nav>
             </div>
         </div>
