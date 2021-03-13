@@ -58,12 +58,4 @@ def get_output(url):
 
 if __name__ == "__main__":
     print(get_output(sys.argv[1]))
-if __name__ == "__main__":
-    print(get_output(sys.argv[1]))
-if __name__ == "__main__":
-    print(get_output(sys.argv[1]))
-if __name__ == "__main__":
-    print(get_output(sys.argv[1]))
-if __name__ == "__main__":
-    print(get_output(sys.argv[1]))
 
