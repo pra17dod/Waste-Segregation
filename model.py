@@ -18,11 +18,6 @@ from tensorflow.keras.layers import Dense, Flatten
 from tensorflow.keras.preprocessing import image_dataset_from_directory
 # from tfhub import load_model_weights
 
-## get a path to the folder with images
-path = os.path.join(os.getcwd(),"dataset-resized")
-
-train = tf.keras.preprocessing.image_dataset_from_directory(path, batch_size=16, image_size=(224,224), shuffle=True, label_mode='categorical', validation_split = 0.25, seed = 1, subset = 'training')
-valid = tf.keras.preprocessing.image_dataset_from_directory(path, batch_size=16, image_size=(224,224), shuffle=True, label_mode='categorical', validation_split = 0.25, seed = 1, subset = 'validation')
 
 model = tf.keras.applications.ResNet50(include_top=False, input_shape=(224,224,3), weights = None)
 
@@ -42,3 +37,27 @@ model2.add(tf.keras.layers.Dense(7, activation='softmax'))
 
 
 model2.load_weights('./model/weights/waste_weights_heavy.h5')
+
+## get a path to the folder with images
+# path = os.path.join(os.getcwd(),"model/dataset-resized")
+
+# train = tf.keras.preprocessing.image_dataset_from_directory(path, batch_size=16, image_size=(224,224), shuffle=True, label_mode='categorical', validation_split = 0.25, seed = 1, subset = 'training')
+# valid = tf.keras.preprocessing.image_dataset_from_directory(path, batch_size=16, image_size=(224,224), shuffle=True, label_mode='categorical', validation_split = 0.25, seed = 1, subset = 'validation')
+def get_output(path):
+
+    temp = img_to_array(load_img(path, target_size=(224,224))).reshape(1,224,224,3)
+    
+    cache = np.argmax(model2.predict(temp))
+
+
+    return cache
+
+if __name__ == "__main__":
+    # sys.argv[1]
+    print(get_output(sys.argv[1]))
+
+    
+
+# temp = img_to_array(load_img('./model/dataset-resized/cardboard/cardboard100.jpg', target_size=(224,224))).reshape(1,224,224,3)
+# np.argmax(model2.predict(temp))
+
