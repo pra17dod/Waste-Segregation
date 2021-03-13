@@ -8,9 +8,7 @@ import random
 import seaborn as sns
 import cv2 as cv
 from PIL import Image
-import pickle
 import sys
-sys.setrecursionlimit(1000000000)
 
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
@@ -43,21 +41,21 @@ model2.load_weights('./model/weights/waste_weights_heavy.h5')
 
 # train = tf.keras.preprocessing.image_dataset_from_directory(path, batch_size=16, image_size=(224,224), shuffle=True, label_mode='categorical', validation_split = 0.25, seed = 1, subset = 'training')
 # valid = tf.keras.preprocessing.image_dataset_from_directory(path, batch_size=16, image_size=(224,224), shuffle=True, label_mode='categorical', validation_split = 0.25, seed = 1, subset = 'validation')
+
+class_name = { 0:'Biodegradable:Reuseable Cardboard waste', 1:'Non-Biodegradable:Reuseable glass waste',
+               2:'Non-Biodegradable:Reuseable metal waste', 3:'Biodegradable Organic waste', 
+               4:'Biodegradable:Reuseable Paper waste', 5:'Non-Biodegradable:Reuseable Plastic waste' }
+
+def get_names(cache):
+    return class_name[cache]
+
 def get_output(path):
 
     temp = img_to_array(load_img(path, target_size=(224,224))).reshape(1,224,224,3)
-    
     cache = np.argmax(model2.predict(temp))
-
-
-    return cache
+    prediction = get_names(cache)
+    return prediction
 
 if __name__ == "__main__":
-    # sys.argv[1]
     print(get_output(sys.argv[1]))
-
-    
-
-# temp = img_to_array(load_img('./model/dataset-resized/cardboard/cardboard100.jpg', target_size=(224,224))).reshape(1,224,224,3)
-# np.argmax(model2.predict(temp))
 
