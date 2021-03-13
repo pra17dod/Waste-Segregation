@@ -6,7 +6,10 @@
 instance/*
 !instance/.gitignore
 .webassets-cache
+
+### Model ###
 *.h5
+model/dataset-resized/*
 
 ### Flask.Python Stack ###
 # Byte-compiled / optimized / DLL files
