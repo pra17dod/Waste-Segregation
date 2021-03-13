@@ -8,7 +8,7 @@ We are working on the poblem of Waste Management. We have observed that a lot ci
 Here, we are making Deep Learning Model of Waste segregation which will identify the type of waste i.e., Biodegradable, Non-Biodegradable (Sub class: Recyclable, Resuable). This model then can be deployed at the dumping area, where the waste will be rolled on the conveyer-belt, then the Mechanic machine can segregate the waste. Since, the mechanic model is not possible in online mode, we will be deploying this model on a website, where the images of waste can be uploaded, and the model classify it.
 
 #### 3. The Tech stack we used
-Tensorflow, Django, React.js, Heroku
+Tensorflow, Flask, React.js, Heroku
 
 #### 4. Video of the project 
 
