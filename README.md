@@ -37,7 +37,7 @@ Tensorflow, Flask, React.js, Heroku
 - Neel Thakker    
   <span>
   &nbsp;&nbsp;
-  <a href="#"> <img src="https://img.icons8.com/nolan/64/linkedin.png" width="4%"> </a> &nbsp;
-  <a href="#"> <img src="https://img.icons8.com/nolan/64/github.png" width="4%"> </a> &nbsp;
-  <a href="#"> <img src="https://img.icons8.com/nolan/64/open-resume.png" width="4%"> </a> &nbsp;
+  <a href="https://www.linkedin.com/in/neel-thakker-777b0319b/"> <img src="https://img.icons8.com/nolan/64/linkedin.png" width="4%"> </a> &nbsp;
+  <a href="https://github.com/neel-thakker"> <img src="https://img.icons8.com/nolan/64/github.png" width="4%"> </a> &nbsp;
+  <a href="https://drive.google.com/file/d/1AzOXUpaG8J4ddCiM3GsTJ_mikzrMekFD/view?usp=sharing"> <img src="https://img.icons8.com/nolan/64/open-resume.png" width="4%"> </a> &nbsp;
   </span>
