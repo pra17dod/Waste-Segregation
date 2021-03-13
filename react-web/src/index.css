@@ -906,3 +906,29 @@ div label[for=ui-component-toggle__yearly] {
 .ui-section-hero{
   margin-bottom: -10rem;
 }
+
+.loading-gif{
+  width: 250px;
+}
+
+.display-image{
+  text-align: center;
+}
+
+.display-button{
+  border: none;
+  padding: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+  background-color: #EBEBEB;
+  color: gray;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.display-button:hover {
+  background-color: white;
+  color: black;
+}
+

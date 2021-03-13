@@ -8,9 +8,8 @@ export default function Navbar() {
             <div class="ui-section-header__layout ui-layout-flex">
         
             <a href="#" role="link" aria-label="#" class="ui-section-header--logo">
-                <img width="60" src="https://cdn.dribbble.com/users/227188/screenshots/6792663/recycle.gif" />
+                <img width="60" src="https://cdn.dribbble.com/users/179241/screenshots/6116810/chris-fernandez-electric-recycling-editorial-1-dribbble.png" />
             </a>
-            
             <input type="checkbox" id="ui-section-header--menu-id" />
             <label for="ui-section-header--menu-id" class="ui-section-header--menu-icon"></label>
             

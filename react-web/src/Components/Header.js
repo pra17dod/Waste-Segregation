@@ -26,6 +26,10 @@ export default function Header() {
     setLoading(false)
   }
 
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
   return (
     <div>
         <section class="ui-section-hero">
@@ -39,8 +43,8 @@ export default function Header() {
            
                   <input type="file" id="InputFile" name = "file"
                   onChange={uploadImage} />
-                
-                <p class="ui-text-note"><small>Scan your waste/face.</small></p>
+
+                  <button onClick={refreshPage} className="display-button">Reset</button>
               </div>
             </div>
             
@@ -49,9 +53,9 @@ export default function Header() {
         <div>
           {
             loading ? (
-              <img src="https://cdn.dribbble.com/users/148670/screenshots/5252136/dots.gif" />
+              <img className="loading-gif" src="https://cdn.dribbble.com/users/227188/screenshots/6792663/recycle.gif" />
             ) : (
-              <div>
+              <div className="display-image">
                 <img className="waste-image" src={image} />
               </div>
             )
