@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return jsonify(name="Hello Welcome to Waste Segregation!!")
+    return "Hello Welcome to Waste Segregation!!"
 
 @app.route('/predict', methods=['POST'])
 def predict():
