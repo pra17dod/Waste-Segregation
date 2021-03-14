@@ -24,13 +24,13 @@ export default function Header() {
 		console.log(file.secure_url);
 		setImageURL(file.secure_url);
 
-		fetch('https://af9042c910f6.ngrok.io/predict', {
+		const file1 = await fetch('https://2521d3b4882b.ngrok.io/predict', {
 			method: 'POST',
 			headers: {
 				'Content-type': 'application/json',
 			},
 			body: JSON.stringify({
-				"image" : "https://res.cloudinary.com/neel0506/image/upload/v1615671506/wasteimages/xdjrpknzvsvw9pxujdmd.jpg"
+				"image" : file.secure_url
 			})
 		})
 		.then(res => res.json())
@@ -38,8 +38,11 @@ export default function Header() {
 			console.log(data);
 			setImage(data.predict)	
 			setLoading(false)
-		});
-
+		})
+		.catch(err=>{
+            console.log(err);
+			console.log("Some Error while processing the image.")
+		})
 	}
 
 	function refreshPage() {
@@ -84,4 +87,3 @@ export default function Header() {
     </div>
   );
 }
-
