@@ -24,7 +24,7 @@ export default function Header() {
 		console.log(file.secure_url);
 		setImageURL(file.secure_url);
 
-		const file1 = await fetch('https://2521d3b4882b.ngrok.io/predict', {
+		const file1 = await fetch('https://d62053b42214.ngrok.io/predict', {
 			method: 'POST',
 			headers: {
 				'Content-type': 'application/json',
@@ -79,8 +79,9 @@ export default function Header() {
 						</div>
 					)
 				}
-			<p>{image}</p>
-
+			<div className="waste-type-div">
+				<h2 class='waste-heading'>{image}</h2>
+			</div>	
 			</div>
         </div>
     	</section> 
