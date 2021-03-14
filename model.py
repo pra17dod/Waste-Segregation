@@ -2,7 +2,7 @@ import urllib.request
 import sys
 import tensorflow as tf
 
-model2 = tf.keras.models.load_model('./model/model.h5')
+model2 = tf.keras.models.load_model('./model/model_final.h5')
 
 class_name = { 0:'Biodegradable:Reuseable Cardboard waste', 1:'Non-Biodegradable:Reuseable glass waste',
                2:'Non-Biodegradable:Reuseable metal waste', 3:'Biodegradable Organic waste', 
