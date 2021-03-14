@@ -24,7 +24,7 @@ export default function Header() {
 		console.log(file.secure_url);
 		setImageURL(file.secure_url);
 
-		const file1 = await fetch('https://d62053b42214.ngrok.io/predict', {
+		const file1 = await fetch('https://ml-waste-segregation.herokuapp.com/predict', {
 			method: 'POST',
 			headers: {
 				'Content-type': 'application/json',
