@@ -1,17 +1,9 @@
-import numpy as np
-import os
-import shutil
-import re
-import random
-from PIL import Image
+# from PIL import Image
 import sys
-from PIL import Image
 import urllib.request
 
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
-from tensorflow.keras.layers import Dense, Flatten
-from tensorflow.keras.preprocessing import image_dataset_from_directory
 
 
 model2 = tf.keras.models.load_model('./model/model.h5')
@@ -25,11 +17,12 @@ def get_names(cache):
 
 def get_output(url):
 
-    img = Image.open(urllib.request.urlopen(url))
-    temp = img_to_array(img)
+    img = urllib.request.urlopen(url).read()
+    temp = tf.convert_to_tensor(bytearray(img), dtype='uint8')
+    # temp = img_to_array(img)
     temp = tf.image.resize(temp, [224,224])
     temp = tf.reshape(temp, [-1,224,224,3])
-    cache = np.argmax(model2.predict(temp))
+    cache = tf.math.argmax(model2.predict(temp))
     prediction = get_names(cache)
     
     return prediction
