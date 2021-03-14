@@ -11,6 +11,10 @@ instance/*
 *.h5
 model/dataset-resized/*
 
+### Debugging ###
+node_modules
+*.json
+
 ### Flask.Python Stack ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
