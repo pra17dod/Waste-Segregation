@@ -17,7 +17,7 @@ Tensorflow, Flask, React.js, Heroku
 #### 4. Working of our project
 We have developed Machine Learning app which classify image of waste into Biodegradable and Non-Biodegradable. This app is deployed at this [link1](https://ml-waste-segregation.herokuapp.com/). This app serves as backend and server for the frontend app, which is deployed at this [link2](https://wastesegregation-react.herokuapp.com/). The frontend app is made by using React. One can upload the image of the waste, then there will be output of image with its types. Both of this apps are deployed on heroku separately and integrated with each other.
 
-#### 5. Video of the project 
+#### 5. Video of the project [Click here](https://youtu.be/LXCZ8ZQ6B8k) 
 
 #### 6. Resume, LinkedIn and GitHub profile url of all the team members 
 - Neel Bavarva      
