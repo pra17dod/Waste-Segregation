@@ -1,10 +1,6 @@
-# from PIL import Image
-import sys
 import urllib.request
 
 import tensorflow as tf
-from tensorflow.keras.preprocessing.image import load_img, img_to_array
-
 
 model2 = tf.keras.models.load_model('./model/model.h5')
 
@@ -18,11 +14,11 @@ def get_names(cache):
 def get_output(url):
 
     img = urllib.request.urlopen(url).read()
-    temp = tf.convert_to_tensor(bytearray(img), dtype='uint8')
+    temp = tf.io.decode_jpeg(img, channels = 3)
     # temp = img_to_array(img)
     temp = tf.image.resize(temp, [224,224])
     temp = tf.reshape(temp, [-1,224,224,3])
-    cache = tf.math.argmax(model2.predict(temp))
+    cache = tf.keras.backend.eval(tf.math.argmax(model2.predict(temp), axis = -1))[0]
     prediction = get_names(cache)
     
     return prediction
