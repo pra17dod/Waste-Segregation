@@ -8,7 +8,6 @@ instance/*
 .webassets-cache
 
 ### Model ###
-*.h5
 model/dataset-resized/*
 
 ### Debugging ###
