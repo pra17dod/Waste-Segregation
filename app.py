@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify, render_template
 from model import get_output
-from PIL import Image
 from flask_cors import CORS
 
 app = Flask(__name__)
