@@ -19,7 +19,7 @@ We have developed Machine Learning app which classify image of waste into Biodeg
 
 #### 5. Video of the project [Click here](https://youtu.be/LXCZ8ZQ6B8k) 
 
-#### 6. Resume, LinkedIn and GitHub profile url of all the team members 
+#### 6. Resume, LinkedIn and GitHub profile url of all the Team members 
 - Neel Bavarva      
   <span>
   &nbsp;&nbsp;
