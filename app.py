@@ -7,7 +7,7 @@ CORS(app)
 
 @app.route("/")
 def home():
-    return "Hello Welcome to Waste Segregation!!"
+    return "<center><h1>Hello Welcome to Waste Segregation!!</h1></br><h2>This is Backend site</h2></center>"
 
 @app.route('/predict', methods=['POST'])
 def predict():
